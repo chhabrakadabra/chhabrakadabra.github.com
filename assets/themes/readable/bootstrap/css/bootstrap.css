@@ -5853,7 +5853,7 @@ div.subnav-fixed {
 .affix {
   position: fixed;
 }
-[class^="icon-"] {
+.navbar [class^="icon-"] {
   font-size: 28px;
   vertical-align: -5px;
 }

@@ -85,7 +85,15 @@
     <div class="container">
 
       <!-- Actual content -->
-      {{ content }}
+      <div class="row">
+        <div class="span9">
+          {{ content }}
+        </div>
+        <div class="span3">
+          {% assign posts = site.posts %}
+          {% include custom/sidebar %}
+        </div>
+      </div>
 
       <hr>
       <footer>
