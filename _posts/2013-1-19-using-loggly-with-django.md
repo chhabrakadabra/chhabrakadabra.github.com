@@ -51,11 +51,11 @@ LOGGING = {
 }
 {% endhighlight %}
 
-*Note*: as can be seen, I have sneaked in another python library called python-json-logger to format my log messages as json packets. This will make the log messages easily searchable in loggly and is the recommended format for messages.
+**Note**: as can be seen, I have sneaked in another python library called python-json-logger to format my log messages as json packets. This will make the log messages easily searchable in loggly and is the recommended format for messages.
 Log the Django way!
 
 You can now log just like Django suggests. In the example above, all error logging in django (relevant to requests) will automatically be caught by the logger 'django.request'. In case you wanted to have a "catch-all" type logger, you could replace 'django.request' with 'django' in the loggers dictionary. 
 
 In the example configuration I have suggested, even log messages by libraries like Tastypie (which logs on 'django.request.tastypie' will be logged to loggly automatically.
 
-**Happy logging!**
+*Happy logging!*
