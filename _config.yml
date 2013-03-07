@@ -15,8 +15,10 @@ author :
   name : Abhin Chhabra
   email : chhabra.abhin@gmail.com
   github : chhabrakadabra
-  twitter : chhabrakadabra
+  twitter : abhin_chhabra
   feedburner : AbhinChhabra
+  googleplus_id : 103648511190042616008
+  linkedin_pub_url_segment : abhin-chhabra/36/906/59b/
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -113,3 +115,5 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+  pages_list :
+    provider : custom
