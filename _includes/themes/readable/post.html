@@ -1,8 +1,9 @@
+{% assign post = page %}
+
 <div class="page-header">
   <h1>{{ page.title }}</h1>
   {% if page.tagline %}<h5>{{page.tagline}}</h5>{% endif %}
   <span class="label" style="margin-right: 10px;">{{ page.date | date_to_long_string }}</span>
-  {% assign post = page %}
   {% include custom/sharing_icons %}
 </div>
 
@@ -26,7 +27,7 @@
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
+  {% endunless %}
 
     <hr>
     <div class="pagination">

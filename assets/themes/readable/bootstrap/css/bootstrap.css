@@ -5853,10 +5853,6 @@ div.subnav-fixed {
 .affix {
   position: fixed;
 }
-.navbar [class^="icon-"] {
-  font-size: 28px;
-  vertical-align: -5px;
-}
 #forkongithub {
   z-index: 1050;
 }
@@ -5894,7 +5890,7 @@ div.subnav-fixed {
 }
 @media screen and (min-width: 800px) {
   #forkongithub {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     right: 0;
@@ -5912,4 +5908,23 @@ div.subnav-fixed {
     -webkit-transform: rotate(45deg);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
   }
+}
+.social-icons {
+  font-size: 28px;
+  vertical-align: -5px;
+}
+.social-icons a {
+  text-decoration: none;
+}
+.share-button {
+  width: 85px !important;
+}
+.twitter-share-button {
+  vertical-align: -3px;
+}
+.linkedin-share-button {
+  vertical-align: -4px;
+}
+iframe[src^="https://plusone.google.com"] {
+  vertical-align: -4px !important;
 }
