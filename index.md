@@ -18,8 +18,9 @@ group: navigation
       {% endunless %}  
     </div>
     <div class="span2">
-      <!-- TODO: social sharing -->
-      <div class="fb-like pull-right" data-href="http://{{site.production_url}}{{ post.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial">&nbsp;</div>
+      <!-- social sharing -->
+      {% assign social_layout = "vertical" %}
+      {% include custom/sharing_icons %}
     </div>
   </div>
   <strong>{{ post.date | date_to_string }}</strong>

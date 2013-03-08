@@ -1,0 +1,25 @@
+{% capture post_url %}http://{{site.production_url}}{{post.url}}{% endcapture %}
+
+<div class="fb-like" data-href="{{ post_url }}" 
+	data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" 
+	data-font="arial">
+	&nbsp;
+</div>
+
+{% if social_layout == "vertical" %}
+<br>
+{% endif %}
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en"
+data-url="{{ post_url }}" data-text="Check out '{{ post.title }}'" data-via="abhin_chhabra"
+data-related="Uberlearner" data-hashtags="{{ post.tags | join:',' }}">Tweet</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+{% if social_layout == "vertical" %}
+<br>
+{% endif %}
+
+{% assign post_url = nil %}
+{% assign social_layout = nil %}
