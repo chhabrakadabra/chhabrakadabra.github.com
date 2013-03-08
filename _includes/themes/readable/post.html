@@ -2,7 +2,8 @@
   <h1>{{ page.title }}</h1>
   {% if page.tagline %}<h5>{{page.tagline}}</h5>{% endif %}
   <div class="date">
-    <span class="label">{{ page.date | date_to_long_string }}</strong>
+    <span class="label">{{ page.date | date_to_long_string }}</span>
+    <div style="margin-left: 15px" class="fb-like" data-href="http://{{site.production_url}}{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial">&nbsp;</div>
   </div>
 </div>
 

@@ -19,8 +19,9 @@ group: navigation
     </div>
     <div class="span2">
       <!-- TODO: social sharing -->
+      <div class="fb-like pull-right" data-href="http://{{site.production_url}}{{ post.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial">&nbsp;</div>
     </div>
-  </div>   
+  </div>
   <strong>{{ post.date | date_to_string }}</strong>
   <hr>
   {% unless post.tagline == null %}
