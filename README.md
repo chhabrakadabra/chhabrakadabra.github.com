@@ -1,4 +1,4 @@
 chhabrakadabra.github.com
 =========================
 
-chhabrakadabra's portfolio page at [[abhin.ca]]
+chhabrakadabra's portfolio page at [abhin.ca](abhin.ca)

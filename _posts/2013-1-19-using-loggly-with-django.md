@@ -4,9 +4,7 @@ category: Software
 tagline: Instructions on integrating Loggly with your Django app
 tags: [loggly, Django, software, development]
 ---
-
-## Using Loggly with Django ##
-I recently decided to beef up the logging functionality at uberlearner.com. And I ended up deciding to use Loggly. But I wasn't very happy with the loggly documentation on how to do so. So here is how I did it:
+I recently decided to beef up the logging functionality at [Uberlearner](http://uberlearner.com). And I ended up deciding to use Loggly. But I wasn't very happy with the loggly documentation on how to do so. So here is how I did it:
 
 ### Install Hoover ###
 Hoover is the library that loggly provides for python. It can be installed very simply using pip.
