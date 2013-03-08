@@ -1,6 +1,6 @@
 {% capture post_url %}http://{{site.production_url}}{{post.url}}{% endcapture %}
 
-<div class="fb-like" data-href="{{ post_url }}" 
+<div class="fb-like share-button" data-href="{{ post_url }}" 
 	data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" 
 	data-font="arial">
 	&nbsp;
@@ -10,7 +10,7 @@
 <br>
 {% endif %}
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en"
+<a href="https://twitter.com/share" class="twitter-share-button share-button" data-lang="en"
 data-url="{{ post_url }}" data-text="Check out '{{ post.title }}'" data-via="abhin_chhabra"
 data-related="Uberlearner" data-hashtags="{{ post.tags | join:',' }}">Tweet</a>
 <script>
@@ -20,6 +20,11 @@ data-related="Uberlearner" data-hashtags="{{ post.tags | join:',' }}">Tweet</a>
 {% if social_layout == "vertical" %}
 <br>
 {% endif %}
+
+<span class="linkedin-share-button share-button">
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> </script>
+	<script type="IN/Share" data-url="{{post_url}}" data-counter="right"> </script>
+</span>
 
 {% assign post_url = nil %}
 {% assign social_layout = nil %}
