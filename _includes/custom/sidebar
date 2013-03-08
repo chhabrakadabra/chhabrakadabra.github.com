@@ -1,0 +1,24 @@
+<ul class="thumbnails">
+	<li>
+		<div class="thumbnail">
+			<img src="https://graph.facebook.com/chhabrakadabra/picture?height=500" id="profile-photo">
+			<div class="caption">
+				<h5>Contact Me!</h5>
+				<p class="social-icons">
+					<a href="http://ca.linkedin.com/pub/{{ site.author.linkedin_pub_url_segment }}" target="_blank">
+						<i class="icon-linkedin-sign"></i>
+					</a>
+					<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+						<i class="icon-twitter-sign"></i>
+					</a>
+					<a href="https://github.com/{{ site.author.github }}" target="_blank">
+						<i class="icon-github"></i>
+					</a>
+					<a href="https://plus.google.com/{{ site.author.googleplus_id }}" target="_blank">
+						<i class="icon-google-plus-sign"></i>
+					</a>
+				</p>
+			</div>
+		</div>
+	</li>
+</ul>

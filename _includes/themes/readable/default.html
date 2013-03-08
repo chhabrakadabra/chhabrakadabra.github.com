@@ -84,7 +84,7 @@
 
     <div class="container">
       <span id="forkongithub">
-        <a href="https://github.com/chhabrakadabra/chhabrakadabra.github.com">Fork me on GitHub</a>
+        <a href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.com">Fork me on GitHub</a>
       </span>
 
       <!-- Actual content -->
@@ -102,7 +102,8 @@
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>,
-          <a href="http://bootswatch.com" target="_blank">Bootswatch</a>
+          <a href="http://bootswatch.com" target="_blank">Bootswatch</a>,
+          <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>,
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
@@ -110,7 +111,8 @@
     </div>
 
     {% include JB/analytics %}
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootswatch.js"></script>
   </body>
