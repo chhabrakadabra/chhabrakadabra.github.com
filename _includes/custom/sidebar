@@ -17,8 +17,23 @@
 					<a href="https://plus.google.com/{{ site.author.googleplus_id }}" target="_blank">
 						<i class="icon-google-plus-sign"></i>
 					</a>
+					<a href="mailto:{{ site.author.email }}" title="{{ site.author.email }}">
+						<i class="icon-envelope-alt"></i>
+					</a>
 				</p>
 			</div>
 		</div>
 	</li>
 </ul>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8522406288199586";
+/* below abhin.ca sidebar (larger{ */
+google_ad_slot = "9053480496";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
