@@ -26,5 +26,11 @@ data-related="Uberlearner" data-hashtags="{{ post.tags | join:',' }}">Tweet</a>
 	<script type="IN/Share" data-url="{{post_url}}" data-counter="right"> </script>
 </span>
 
+{% if social_layout == "vertical" %}
+<br>
+{% endif %}
+
+<div class="g-plusone" data-size="medium" data-href="{{post_url}}">&nbsp;</div>
+
 {% assign post_url = nil %}
 {% assign social_layout = nil %}
