@@ -16,7 +16,7 @@ pip install Hoover
 ### Change Django settings ###
 Now add a handler in the LOGGING dictionary of your Django settings file to use hoover:
 
-{% highlight python %}
+{% highlight python linenos=table %}
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,

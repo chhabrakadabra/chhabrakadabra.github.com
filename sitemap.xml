@@ -1,0 +1,21 @@
+---
+layout: nil
+title : Sitemap
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://{{ site.production_url }}</loc>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+{% for post in site.posts %}
+	<url>
+		<loc>http://{{ site.production_url }}{{ post.url }}</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+	</url>
+{% endfor %}
+</urlset>
